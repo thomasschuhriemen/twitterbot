@@ -1,0 +1,265 @@
+Last login: Fri Jan  6 15:14:06 on ttys000
+Margarets-Air-2:~ margaretschuhriemen$ cd ~Documents/samoht_twitterbot
+-bash: cd: ~Documents/samoht_twitterbot: No such file or directory
+Margarets-Air-2:~ margaretschuhriemen$ cd ~Documents/Samoht_twitterbot
+-bash: cd: ~Documents/Samoht_twitterbot: No such file or directory
+Margarets-Air-2:~ margaretschuhriemen$ cd ~/Documents/Samoht_twitterbot
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ git init
+Initialized empty Git repository in /Users/margaretschuhriemen/Documents/Samoht_twitterbot/.git/
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ git add .
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ git commit -m 'commit message'
+[master (root-commit) 385699f] commit message
+ Committer: Thomas Schuhriemen <margaretschuhriemen@Margarets-Air-2.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 199 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Procfile
+ create mode 100644 Quickly Show_Hide Hidden Files on macOS Sierra, OS X El Capitan & Yosemite _ Ian Lunn - Front-end Developer.pdf
+ create mode 100644 Schuhriemen Primary Source Essay 1.pdf
+ create mode 100644 bot.js
+ create mode 100644 metals.json
+ create mode 100644 package.json
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ heroku login
+Enter your Heroku credentials.
+Email: liquidice327+twitterbot@gmail.com
+Password (typing will be hidden): 
+Logged in as liquidice327+twitterbot@gmail.com
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ heroku git:remote -a samoht-twitterserver
+set git remote heroku to https://git.heroku.com/samoht-twitterserver.git
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ heroku git:remote -a samoht-twitterserver
+set git remote heroku to https://git.heroku.com/samoht-twitterserver.git
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ git push heroku master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 7.13 MiB | 2.74 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Node.js app detected
+remote: 
+remote: -----> Creating runtime environment
+remote:        
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NPM_CONFIG_PRODUCTION=true
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote: 
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:        
+remote:        Resolving node version (latest stable) via semver.io...
+remote:        Downloading and installing node 6.9.1...
+remote:        Using default npm version: 3.10.8
+remote: 
+remote: -----> Restoring cache
+remote:        Skipping cache restore (new runtime signature)
+remote: 
+remote: -----> Building dependencies
+remote:        Installing node modules (package.json)
+remote:        samoht_twitterbot@1.0.0 /tmp/build_acb32297ec0ca51a1488a7d54dab8ace
+remote:        ├── dotenv@2.0.0
+remote:        ├─┬ express@4.14.0
+remote:        │ ├─┬ accepts@1.3.3
+remote:        │ │ ├─┬ mime-types@2.1.13
+remote:        │ │ │ └── mime-db@1.25.0
+remote:        │ │ └── negotiator@0.6.1
+remote:        │ ├── array-flatten@1.1.1
+remote:        │ ├── content-disposition@0.5.1
+remote:        │ ├── content-type@1.0.2
+remote:        │ ├── cookie@0.3.1
+remote:        │ ├── cookie-signature@1.0.6
+remote:        │ ├─┬ debug@2.2.0
+remote:        │ │ └── ms@0.7.1
+remote:        │ ├── depd@1.1.0
+remote:        │ ├── encodeurl@1.0.1
+remote:        │ ├── escape-html@1.0.3
+remote:        │ ├── etag@1.7.0
+remote:        │ ├─┬ finalhandler@0.5.0
+remote:        │ │ ├── statuses@1.3.1
+remote:        │ │ └── unpipe@1.0.0
+remote:        │ ├── fresh@0.3.0
+remote:        │ ├── merge-descriptors@1.0.1
+remote:        │ ├── methods@1.1.2
+remote:        │ ├─┬ on-finished@2.3.0
+remote:        │ │ └── ee-first@1.1.1
+remote:        │ ├── parseurl@1.3.1
+remote:        │ ├── path-to-regexp@0.1.7
+remote:        │ ├─┬ proxy-addr@1.1.2
+remote:        │ │ ├── forwarded@0.1.0
+remote:        │ │ └── ipaddr.js@1.1.1
+remote:        │ ├── qs@6.2.0
+remote:        │ ├── range-parser@1.2.0
+remote:        │ ├─┬ send@0.14.1
+remote:        │ │ ├── destroy@1.0.4
+remote:        │ │ └─┬ http-errors@1.5.1
+remote:        │ │   ├── inherits@2.0.3
+remote:        │ │   └── setprototypeof@1.0.2
+remote:        │ ├── serve-static@1.11.1
+remote:        │ ├─┬ type-is@1.6.14
+remote:        │ │ └── media-typer@0.3.0
+remote:        │ ├── utils-merge@1.0.0
+remote:        │ └── vary@1.1.0
+remote:        └─┬ twit@2.2.5
+remote:        ├── bluebird@3.4.7
+remote:        ├── mime@1.3.4
+remote:        └─┬ request@2.79.0
+remote:        ├── aws-sign2@0.6.0
+remote:        ├── aws4@1.5.0
+remote:        ├── caseless@0.11.0
+remote:        ├─┬ combined-stream@1.0.5
+remote:        │ └── delayed-stream@1.0.0
+remote:        ├── extend@3.0.0
+remote:        ├── forever-agent@0.6.1
+remote:        ├─┬ form-data@2.1.2
+remote:        │ └── asynckit@0.4.0
+remote:        ├─┬ har-validator@2.0.6
+remote:        │ ├─┬ chalk@1.1.3
+remote:        │ │ ├── ansi-styles@2.2.1
+remote:        │ │ ├── escape-string-regexp@1.0.5
+remote:        │ │ ├─┬ has-ansi@2.0.0
+remote:        │ │ │ └── ansi-regex@2.0.0
+remote:        │ │ ├── strip-ansi@3.0.1
+remote:        │ │ └── supports-color@2.0.0
+remote:        │ ├─┬ commander@2.9.0
+remote:        │ │ └── graceful-readlink@1.0.1
+remote:        │ ├─┬ is-my-json-valid@2.15.0
+remote:        │ │ ├── generate-function@2.0.0
+remote:        │ │ ├─┬ generate-object-property@1.2.0
+remote:        │ │ │ └── is-property@1.0.2
+remote:        │ │ ├── jsonpointer@4.0.1
+remote:        │ │ └── xtend@4.0.1
+remote:        │ └─┬ pinkie-promise@2.0.1
+remote:        │   └── pinkie@2.0.4
+remote:        ├─┬ hawk@3.1.3
+remote:        │ ├── boom@2.10.1
+remote:        │ ├── cryptiles@2.0.5
+remote:        │ ├── hoek@2.16.3
+remote:        │ └── sntp@1.0.9
+remote:        ├─┬ http-signature@1.1.1
+remote:        │ ├── assert-plus@0.2.0
+remote:        │ ├─┬ jsprim@1.3.1
+remote:        │ │ ├── extsprintf@1.0.2
+remote:        │ │ ├── json-schema@0.2.3
+remote:        │ │ └── verror@1.3.6
+remote:        │ └─┬ sshpk@1.10.1
+remote:        │   ├── asn1@0.2.3
+remote:        │   ├── assert-plus@1.0.0
+remote:        │   ├── bcrypt-pbkdf@1.0.0
+remote:        │   ├─┬ dashdash@1.14.1
+remote:        │   │ └── assert-plus@1.0.0
+remote:        │   ├── ecc-jsbn@0.1.1
+remote:        │   ├─┬ getpass@0.1.6
+remote:        │   │ └── assert-plus@1.0.0
+remote:        │   ├── jodid25519@1.0.2
+remote:        │   ├── jsbn@0.1.0
+remote:        │   └── tweetnacl@0.14.5
+remote:        ├── is-typedarray@1.0.0
+remote:        ├── isstream@0.1.2
+remote:        ├── json-stringify-safe@5.0.1
+remote:        ├── oauth-sign@0.8.2
+remote:        ├── qs@6.3.0
+remote:        ├── stringstream@0.0.5
+remote:        ├─┬ tough-cookie@2.3.2
+remote:        │ └── punycode@1.4.1
+remote:        ├── tunnel-agent@0.4.3
+remote:        └── uuid@3.0.1
+remote:        
+remote: 
+remote: -----> Caching build
+remote:        Clearing previous node cache
+remote:        Saving 2 cacheDirectories (default):
+remote:        - node_modules
+remote:        - bower_components (nothing to cache)
+remote: 
+remote: -----> Build succeeded!
+remote:        ├── dotenv@2.0.0
+remote:        ├── express@4.14.0
+remote:        └── twit@2.2.5
+remote:        
+remote: -----> Discovering process types
+remote:        Default types for buildpack -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 22.2M
+remote: -----> Launching...
+remote:        Released v7
+remote:        https://samoht-twitterserver.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/samoht-twitterserver.git
+ * [new branch]      master -> master
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ heroku restart
+Restarting dynos on ⬢ samoht-twitterserver... done
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ heroku logs
+2017-01-07T22:23:00.589967+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=samoht-twitterserver.herokuapp.com request_id=a245a635-030d-4b8d-9965-fab505afbb91 fwd="72.80.80.219" dyno= connect= service= status=502 bytes=
+2017-01-07T22:23:00.798665+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=samoht-twitterserver.herokuapp.com request_id=c52de338-0889-4806-867e-642428421980 fwd="72.80.80.219" dyno= connect= service= status=502 bytes=
+2017-01-07T23:07:09.947616+00:00 heroku[slug-compiler]: Slug compilation started
+2017-01-07T23:07:09.947622+00:00 heroku[slug-compiler]: Slug compilation finished
+2017-01-07T23:07:11.436417+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-01-07T23:07:14.290131+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
+2017-01-07T23:07:14.290544+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-01-07T23:07:14.290812+00:00 app[web.1]: npm ERR! node v6.9.1
+2017-01-07T23:07:14.291066+00:00 app[web.1]: npm ERR! npm  v3.10.8
+2017-01-07T23:07:14.293520+00:00 app[web.1]: 
+2017-01-07T23:07:14.295091+00:00 app[web.1]: npm ERR! missing script: start
+2017-01-07T23:07:14.295342+00:00 app[web.1]: npm ERR! 
+2017-01-07T23:07:14.295509+00:00 app[web.1]: npm ERR! If you need help, you may report this error at:
+2017-01-07T23:07:14.295659+00:00 app[web.1]: npm ERR!     <https://github.com/npm/npm/issues>
+2017-01-07T23:07:14.309154+00:00 app[web.1]: 
+2017-01-07T23:07:14.309424+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-01-07T23:07:14.309595+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-01-07T23:07:14.400044+00:00 heroku[web.1]: State changed from starting to crashed
+2017-01-07T23:07:14.401292+00:00 heroku[web.1]: State changed from crashed to starting
+2017-01-07T23:07:14.382324+00:00 heroku[web.1]: Process exited with status 1
+2017-01-07T23:07:16.560345+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-01-07T23:07:20.378289+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
+2017-01-07T23:07:20.378695+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-01-07T23:07:20.378947+00:00 app[web.1]: npm ERR! node v6.9.1
+2017-01-07T23:07:20.379217+00:00 app[web.1]: npm ERR! npm  v3.10.8
+2017-01-07T23:07:20.381599+00:00 app[web.1]: 
+2017-01-07T23:07:20.383382+00:00 app[web.1]: npm ERR! missing script: start
+2017-01-07T23:07:20.383671+00:00 app[web.1]: npm ERR! 
+2017-01-07T23:07:20.383860+00:00 app[web.1]: npm ERR! If you need help, you may report this error at:
+2017-01-07T23:07:20.384044+00:00 app[web.1]: npm ERR!     <https://github.com/npm/npm/issues>
+2017-01-07T23:07:20.398381+00:00 app[web.1]: 
+2017-01-07T23:07:20.398874+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-01-07T23:07:20.399229+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-01-07T23:07:20.541379+00:00 heroku[web.1]: State changed from starting to crashed
+2017-01-07T23:07:20.524832+00:00 heroku[web.1]: Process exited with status 1
+2017-01-07T23:07:24.088537+00:00 heroku[web.1]: State changed from crashed to starting
+2017-01-07T23:07:25.891277+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-01-07T23:07:29.348682+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-01-07T23:07:29.348256+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
+2017-01-07T23:07:29.348919+00:00 app[web.1]: npm ERR! node v6.9.1
+2017-01-07T23:07:29.349079+00:00 app[web.1]: npm ERR! npm  v3.10.8
+2017-01-07T23:07:29.350679+00:00 app[web.1]: 
+2017-01-07T23:07:29.351699+00:00 app[web.1]: npm ERR! missing script: start
+2017-01-07T23:07:29.351914+00:00 app[web.1]: npm ERR! 
+2017-01-07T23:07:29.351993+00:00 app[web.1]: npm ERR! If you need help, you may report this error at:
+2017-01-07T23:07:29.352074+00:00 app[web.1]: npm ERR!     <https://github.com/npm/npm/issues>
+2017-01-07T23:07:29.364815+00:00 app[web.1]: 
+2017-01-07T23:07:29.365114+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-01-07T23:07:29.365264+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-01-07T23:07:29.476582+00:00 heroku[web.1]: State changed from starting to crashed
+2017-01-07T23:07:29.467097+00:00 heroku[web.1]: Process exited with status 1
+Margarets-Air-2:Samoht_twitterbot margaretschuhriemen$ 

@@ -1,0 +1,17 @@
+{
+  "name": "samoht_twitterbot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node bot.js"
+  },
+  "author": "tom schuhriemen",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "twit": "^2.2.5"
+  }
+}
