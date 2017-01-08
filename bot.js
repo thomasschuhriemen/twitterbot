@@ -41,10 +41,6 @@ function tweet() {
         //This is the string we will tweet
         var msg = randomChoice(metal) + randomChoice(word);
 
-        // This is a random number bot
-        var msg = 'Here\'s a random number between 0 or 100: ' +
-            Math.floor(Math.random() * 100)
-
         //Callback for when the tweet is sent
         function tweeted(err, data, response) {
             if (err) {
